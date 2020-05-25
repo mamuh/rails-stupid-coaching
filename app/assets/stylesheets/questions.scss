@@ -28,12 +28,16 @@ input {
   font-size: 1em;
   font-weight: lighter;
   border-radius: inherit;
+  &:focus {
+    outline: none;
+    background-color: transparent;
+  }
 }
 
-input:focus {
+/*input:focus {
   outline: none;
   background-color: transparent;
-}
+}*/
 
 .button {
   border:1px solid #337AB7;
@@ -49,12 +53,17 @@ input:focus {
   border-left: 10px solid #dddddd;
   margin-top: 15px;
   padding: 1px 10px;
+
+  p {
+    padding-top: 5px;
+    margin-top: 10px;
+  }
 }
 
-.box p {
+/*.box p {
   padding-top: 5px;
   margin-top: 10px;
-}
+}*/
 
 .answer {
   background-color: #FFFEE1;
@@ -62,4 +71,7 @@ input:focus {
 
 .ask-new {
   margin-top: 15px;
+  a {
+    text-decoration: none;
+  }
 }
