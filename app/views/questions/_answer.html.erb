@@ -1,0 +1,21 @@
+<div class="box">
+  <p>
+    <%= @user_question %>
+  </p>
+  <p>
+    <em>-You</em>
+  </p>
+</div>
+
+<div class="box answer">
+  <p>
+    <b><%= @answer %></b>
+  </p>
+  <p>
+    <em>-Your coach</em>
+  </p>
+</div>
+
+<div class="ask-new">
+  <%= link_to "Ask a new question", root_path %>
+</div>

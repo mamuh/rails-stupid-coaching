@@ -1,9 +1,9 @@
 Ask you coach anything:
-<form action="ask">
+<form action="/">
   <input type="text" name="user_question">
-  <input type="submit" value="send">
+  <input type="submit" value="send" class="button">
 </form>
 
-<div>
-  <%= @user_question %>
-</div>
+<% if @user_question %>
+  <%= render partial: "answer" %>
+<% end %>
